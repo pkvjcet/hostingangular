@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col col-12 col-sm-4">
+
+    </div>
+    <div class="col col-12 col-sm-4">
+        <form (ngSubmit)="readValues(mydata)" #mydata="ngForm">
+                <table class="table">
+                        <tr>
+                            <td>Course Title</td>
+                            <td><input type="text" class="form-control" name="courseTitle" ngModel></td>
+                        </tr>
+                        <tr>
+                                <td>Course Description</td>
+                                <td>
+                                    <textarea  cols="30" rows="5" class="form-control" name="courseDescription" ngModel></textarea>
+                                </td>
+                        </tr>
+                        <tr>
+                                <td>Course Duration</td>
+                                <td><input type="text" class="form-control" name="courseDuration" ngModel></td>
+                        </tr>
+                        <tr>
+                                <td>Venue</td>
+                                <td><input type="text" class="form-control" name="courseVenue" ngModel></td>
+                        </tr>
+                        <tr>
+                                <td>DoB</td>
+                                <td><input type="date" class="form-control" name="courseDate" ngModel></td>
+                        </tr>
+                        
+                        <tr>
+                                <td></td>
+                                <td><Button type="submit" class="btn btn-secondary">Submit</Button></td>
+                        </tr>
+                    </table>
+    
+        </form>
+    </div>
+    <div class="col col-12 col-sm-4">
+
+    </div>
+</div>
